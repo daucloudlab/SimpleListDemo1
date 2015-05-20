@@ -22,8 +22,11 @@ public class MainActivity extends ActionBarActivity {
 
         ListView listView = (ListView)findViewById(R.id.lvMain) ;
 
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+//                android.R.layout.simple_list_item_1, names) ;
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, names) ;
+                R.layout.my_list_item, names) ;
 
         listView.setAdapter(adapter);
     }
